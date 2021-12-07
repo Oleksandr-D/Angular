@@ -5,6 +5,7 @@
     <button class="add" (click)="addWord()">Add</button>
     <button id="reset" value="reset" (click)="resetWords()">Reset</button>
   </div>
+  
   <div class="cenzor-wraper">
     <textarea id="texta" [(ngModel)]="getText" placeholder="Text here..."></textarea>
     <button (click)="cenzorWords()" id="cenzor" type="text" value="Cenzor">Cenzor</button>
