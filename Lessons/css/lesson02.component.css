@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  border-radius: 5px;
+  font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+.lesson-item {
+  width: 110px;
+  font-size: 20px;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 2px 10px;
+  margin: 5px;
+}
+
+.lesson-item:hover {
+  color: white;
+  background-color: #8d8d8d;
+  cursor: pointer;
+}
+
+.wrapper {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 1000px;
+  height: 500px;
+  background-color: white;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+form {
+  width: 475px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 80%;
+  height: 30px;
+  margin-top: 10px;
+  outline: none;
+  padding-left: 5px;
+  font-size: 15px;
+  -webkit-box-shadow: -2px 1px 9px 3px #949494;
+          box-shadow: -2px 1px 9px 3px #949494;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="submit"] {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="submit"]:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: -8px 8px 9px 3px #949494;
+          box-shadow: -8px 8px 9px 3px #949494;
+}
+
+input[type="submit"] {
+  width: 80%;
+  height: 40px;
+  background-color: #3f86c9;
+  color: white;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+input::-webkit-input-placeholder {
+  color: lightgray;
+}
+
+input:-ms-input-placeholder {
+  color: lightgray;
+}
+
+input::-ms-input-placeholder {
+  color: lightgray;
+}
+
+input::placeholder {
+  color: lightgray;
+}
+
+button {
+  width: 50px;
+  height: 30px;
+  background-color: #f7b655;
+}
+
+.password,
+.email,
+.submit {
+  margin-top: 20px;
+}
+
+table {
+  width: 475px;
+  height: 100px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: none;
+}
+
+tr {
+  border-bottom: 2px solid lightgray;
+  height: 50px;
+}
+
+td {
+  text-align: center;
+}
+/*# sourceMappingURL=lesson02.component.css.map */

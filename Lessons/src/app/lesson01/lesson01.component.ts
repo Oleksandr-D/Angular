@@ -17,10 +17,13 @@ export class Lesson01Component implements OnInit {
   bad_words!: string;
   word!: string;
   all_bad_words: Array < any > = [];
+  public modalWindow = false;
   constructor() {}
 
   ngOnInit(): void {}
-
+  showModal():void{
+    this.modalWindow = !this.modalWindow;
+  }
   addWord(): void {
     if (this.word === '') {
       alert('Please write a bad word!')

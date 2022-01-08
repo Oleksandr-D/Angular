@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 0;
   border-radius: 5px;
   font-family: 'Arial Narrow Bold', sans-serif;
@@ -12,6 +13,7 @@ h2,
 h4 {
   margin: 10px;
 }
+
 .lesson-item {
   width: 110px;
   font-size: 20px;
@@ -23,9 +25,10 @@ h4 {
 
 .lesson-item:hover {
   color: white;
-  background-color: rgb(141, 141, 141);
+  background-color: #8d8d8d;
   cursor: pointer;
 }
+
 .wraper {
   width: 500px;
   height: 340px;
@@ -38,17 +41,27 @@ h4 {
 .bad-words {
   width: 470px;
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin: auto;
 }
 
 .button-wraper {
   width: 500px;
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 button {
@@ -69,9 +82,16 @@ button:hover {
 }
 
 .cenzor-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 textarea {
@@ -99,10 +119,26 @@ textarea {
 
 #cenzor:hover {
   border: none;
-  background-color: rgb(24, 148, 79);
+  background-color: #18944f;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: lightgray;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: lightgray;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: lightgray;
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: lightgray
+  color: lightgray;
 }
+/*# sourceMappingURL=lesson01.component.css.map */
